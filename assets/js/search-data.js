@@ -419,10 +419,7 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-our-work-has-been-accepted-at-the-computer-vision-and-pattern-recognition-cvpr-latinx-workshop-in-nashville-united-states-titled-pinesort-a-simple-online-real-time-tracking-framework-for-drone-videos-in-agriculture",
+            },},{id: "news-our-work-has-been-accepted-at-the-computer-vision-and-pattern-recognition-cvpr-latinx-workshop-in-nashville-united-states-titled-pinesort-a-simple-online-real-time-tracking-framework-for-drone-videos-in-agriculture",
           title: 'Our work has been accepted at the Computer Vision and Pattern Recognition (CVPR)...',
           description: "",
           section: "News",},{id: "news-our-work-has-been-accepted-at-the-conferencia-latinoamericana-de-informática-clei-in-valparaíso-chile-titled-squeeze-every-bit-of-insight-leveraging-few-shot-models-with-a-compact-support-set-for-domain-transfer-in-object-detection-from-pineapple-fields-for-oral-presentation",
