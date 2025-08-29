@@ -37,3 +37,8 @@ Our research group explores innovative solutions to complex design challenges ac
 - Precision agriculture and yield estimation  
 - Object detection and multi-object tracking  
 - Foundational models in artificial intelligence  
+
+📧 [deeplearning@sa.ucr.ac.cr](mailto:deeplearning@sa.ucr.ac.cr)  
+
+We warmly welcome students, researchers, and collaborators to join us in advancing cutting-edge research and fostering innovation.  
+If you are interested in contributing or collaborating, we would be delighted to hear from you!
