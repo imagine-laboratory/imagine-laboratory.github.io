@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='https://www.ucr.ac.cr/'>Universidad de Costa Rica</a> | Atlantic Branch
 
 profile:
   align: right
