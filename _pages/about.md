@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-# Welcome to the Imagine Laboratory  
+**Welcome to the Imagine Laboratory**
 
 The **Imagine Laboratory** at the *Universidad de Costa Rica, Sede Turrialba*, was founded in 2025 by **Professor Fabián Fallas Moya**.  
 The lab is located in *Cartago Province, Turrialba*, and brings together researchers from the **Department of Computer Science** at the Universidad de Costa Rica and the **Instituto Tecnológico de Costa Rica**.  
