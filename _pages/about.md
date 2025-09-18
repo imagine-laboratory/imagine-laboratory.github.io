@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='https://www.ucr.ac.cr/'>Universidad de Costa Rica</a> | Atlantic Branch
+subtitle: <a href='https://www.ucr.ac.cr/'>Universidad de Costa Rica</a> | Sede Atlántico
 
 profile:
   align: right
