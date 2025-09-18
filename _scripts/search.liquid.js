@@ -214,7 +214,7 @@ ninja.data = [
         {%- when "research_gate_profile" -%}
           {%- assign social_id = "social-researchgate" -%}
           {%- assign social_title = "ResearchGate" -%}
-          {%- capture social_url %}"https://www.researchgate.net/profile/{{ social[1] }}/"{% endcapture -%}
+          {%- capture social_url %}"https://www.researchgate.net/{{ social[1] }}/"{% endcapture -%}
         {%- when "rss_icon" -%}
           {%- assign social_id = "social-rss" -%}
           {%- assign social_title = "RSS Feed" -%}

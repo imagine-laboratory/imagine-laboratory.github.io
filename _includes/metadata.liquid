@@ -166,7 +166,7 @@
         {% capture link %}https://www.quora.com/profile/{{ social[1] }}{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}
       {% when 'research_gate_profile' %}
-        {% capture link %}https://www.researchgate.net/profile/{{ social[1] }}/{% endcapture %}
+        {% capture link %}https://www.researchgate.net/{{ social[1] }}/{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}
       {% when 'rss_icon' %}
         {% comment %}
