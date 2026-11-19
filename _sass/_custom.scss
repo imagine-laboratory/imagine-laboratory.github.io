@@ -1,0 +1,373 @@
+/*******************************************************************************
+ * Custom styles
+ ******************************************************************************/
+
+// Variables de color con contraste garantizado en ambos temas
+:root,
+html[data-theme="light"] {
+  --custom-card-bg: rgba(0, 0, 0, 0.045);
+  --custom-card-border: rgba(0, 0, 0, 0.18);
+}
+
+html[data-theme="dark"] {
+  --custom-card-bg: rgba(255, 255, 255, 0.06);
+  --custom-card-border: rgba(255, 255, 255, 0.18);
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) {
+    --custom-card-bg: rgba(255, 255, 255, 0.06);
+    --custom-card-border: rgba(255, 255, 255, 0.18);
+  }
+}
+
+/*******************************************************************************
+ * About page
+ ******************************************************************************/
+
+.post-header {
+  margin-bottom: 0.5rem;
+
+  .post-title {
+    font-size: 2.75rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .desc {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.post .clearfix {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+
+  p {
+    line-height: 1.8;
+    margin-bottom: 1.3rem;
+    font-size: 1.05rem;
+  }
+
+  strong:first-of-type {
+    font-size: 1.15rem;
+  }
+
+  ul {
+    padding-left: 1.4rem;
+    margin: 1.5rem 0;
+
+    li {
+      margin-bottom: 0.6rem;
+      line-height: 1.7;
+    }
+  }
+}
+
+.profile .more-info {
+  background-color: var(--custom-card-bg);
+  border: 1px solid var(--custom-card-border);
+  border-left: 4px solid var(--global-theme-color);
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  line-height: 1.7;
+}
+
+.post > h2 {
+  border-top: 2px solid var(--global-divider-color);
+  padding-top: 3rem;
+  margin-top: 3.5rem;
+  margin-bottom: 1.8rem;
+  font-size: 1.8rem;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.news {
+  table.table {
+    border-collapse: separate;
+    border-spacing: 0 0.8rem;
+
+    tr {
+      background-color: var(--custom-card-bg);
+    }
+
+    td,
+    th {
+      padding: 1rem 1.2rem;
+      vertical-align: top;
+      border-top: 1px solid var(--custom-card-border);
+      border-bottom: 1px solid var(--custom-card-border);
+    }
+
+    th {
+      border-left: 1px solid var(--custom-card-border);
+      border-radius: 8px 0 0 8px;
+      color: var(--global-theme-color);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    td {
+      border-right: 1px solid var(--custom-card-border);
+      border-radius: 0 8px 8px 0;
+      line-height: 1.6;
+    }
+  }
+}
+
+.social {
+  margin-top: 2rem;
+  padding-top: 2.5rem;
+  border-top: 2px solid var(--global-divider-color);
+
+  .contact-icons a {
+    margin: 0 0.3rem;
+  }
+}
+
+/*******************************************************************************
+ * Publications page
+ ******************************************************************************/
+
+.publications {
+  ol.bibliography {
+    li {
+      background-color: var(--custom-card-bg);
+      border: 1px solid var(--custom-card-border);
+      border-radius: 10px;
+      padding: 1.3rem 1.5rem;
+      margin-bottom: 1.2rem;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+      }
+
+      .title {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .author {
+        line-height: 1.6;
+        margin-bottom: 0.4rem;
+      }
+
+      .periodical {
+        margin-bottom: 0.8rem;
+        color: var(--global-text-color-light);
+      }
+
+      .links {
+        margin-top: 0.3rem;
+
+        a.btn {
+          margin-right: 0.5rem;
+          margin-bottom: 0.3rem;
+        }
+      }
+    }
+  }
+
+  h2.bibliography {
+    border-top: 2px solid var(--global-divider-color);
+    padding-top: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+/*******************************************************************************
+ * Blog / News listing pages
+ ******************************************************************************/
+
+.header-bar {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+// SOLO el <a> recibe fondo y hover — el "·" separador queda intacto siempre
+.tag-category-list {
+  padding-bottom: 1rem;
+
+  ul li,
+  ul p {
+    background-color: transparent;
+  }
+
+  a {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    margin: 0.15rem 0;
+    border-radius: 20px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: var(--global-theme-color);
+      color: var(--global-bg-color) !important;
+      text-decoration: none;
+    }
+  }
+}
+
+.post-list {
+  li {
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    transition: padding-left 0.2s ease-in-out;
+
+    &:hover {
+      padding-left: 0.5rem;
+      border-bottom-color: var(--global-theme-color);
+    }
+
+    a {
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    .post-meta {
+      margin-top: 0.3rem;
+      margin-bottom: 0.3rem;
+    }
+  }
+}
+
+/*******************************************************************************
+ * Projects page
+ ******************************************************************************/
+
+.projects {
+  h2.category {
+    font-size: 1.4rem;
+    margin-top: 3rem;
+  }
+
+  .card {
+    border: 1px solid var(--custom-card-border);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-body {
+      padding: 1.2rem;
+    }
+
+    .card-title {
+      font-weight: 600;
+    }
+  }
+}
+
+/*******************************************************************************
+ * Repositories page
+ ******************************************************************************/
+
+.page h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.7rem;
+}
+
+.page > p.description,
+.page .description {
+  color: var(--global-text-color-light);
+  margin-bottom: 1.5rem;
+}
+
+.repositories {
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem 0;
+
+  > * {
+    margin: 0.3rem;
+  }
+
+  img {
+    border-radius: 6px;
+    transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:hover {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.page hr {
+  margin: 2rem 0;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+/*******************************************************************************
+ * CV / Teaching page
+ ******************************************************************************/
+
+.cv {
+  .card {
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--custom-card-border);
+
+    .card-header {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    .list-group-item {
+      padding: 1rem 1.2rem;
+    }
+  }
+}
+
+.date-column {
+  color: var(--global-text-color-light);
+  font-weight: 500;
+}
+
+/*******************************************************************************
+ * People page
+ ******************************************************************************/
+
+.people {
+  .card,
+  .person {
+    border: 1px solid var(--custom-card-border);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+
+    img {
+      border-radius: 50%;
+      margin-bottom: 0.8rem;
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+}
+
+.post .clearfix h2 {
+  border-top: 2px solid var(--global-divider-color);
+  padding-top: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}

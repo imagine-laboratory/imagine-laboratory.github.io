@@ -42,3 +42,17 @@ Our research group explores innovative solutions to complex design challenges ac
 
 We warmly welcome students, researchers, and collaborators to join us in advancing cutting-edge research and fostering innovation.  
 If you are interested in contributing or collaborating, we would be delighted to hear from you!
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {% for user in site.data.repositories.github_users %}
+    {% include repository/repo_user.liquid username=user %}
+  {% endfor %}
+</div>
+
+## GitHub Repositories
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {% for repo in site.data.repositories.github_repos %}
+    {% include repository/repo.liquid repository=repo %}
+  {% endfor %}
+</div>
